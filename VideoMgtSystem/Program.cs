@@ -6,7 +6,9 @@ namespace VideoMgtSystem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var myRental = VideoMgtSystem.VRental.RentalMovie(TypeOfGenre.kids);
+
+            Console.WriteLine($"Movie:{myRental.MovieName} ,Genre:{myRental.GenreType} ");
         }
     }
 }

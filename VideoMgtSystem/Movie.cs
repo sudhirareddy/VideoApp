@@ -4,16 +4,26 @@ using System.Text;
 
 namespace VideoMgtSystem
 {
+    enum TypeOfGenre
+    {
+        fiction,
+        nonfiction,
+        kids,
+        fantasy,
+        thriller
+    }
     class Movie
     {
         #region properties
-        public int MovieId { get; set; }
-        public string MovieName { get; set; }
-        public string Director { get; set; }
+        public int MovieId { get; private set; }
+        public string MovieName { get; private set; }
+        public string Director { get; private set; }
 
-        public string Genre { get; set; }
-        public string Price { get; set; }
-        public string Availability{ get; set; }
+        public TypeOfGenre GenreType { get;set; }
+        public string Price { get; private set; }
+        public string Availability{ get; private set; }
+
+        public DateTime DateReleased { get; private set; }
         #endregion
 
         #region Methods
