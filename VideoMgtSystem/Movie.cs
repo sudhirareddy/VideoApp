@@ -27,7 +27,7 @@ namespace VideoMgtSystem
         #endregion
 
         #region Methods
-        public void AddM0vie()
+        public void AddMovie()
         {
 
         }
